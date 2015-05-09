@@ -8,7 +8,7 @@ var/list/robot_verbs_default = list(
 /mob/living/silicon/robot
 	name = "Cyborg"
 	real_name = "Cyborg"
-	icon = 'icons/mob/robots.dmi'
+	icon = 'icons/apollo/mob/robots.dmi'
 	icon_state = "robot"
 	maxHealth = 200
 	health = 200

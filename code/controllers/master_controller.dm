@@ -297,6 +297,11 @@ datum/controller/game_controller/proc/process_machines_process()
 				continue
 		machines -= Machine
 
+	// This is necessary to ensure powersinks are always the first devices that drain power from powernet.
+	// Otherwise APCs or other stuff go first, resulting in bad things happening.
+	for(var/obj/item/device/powersink/S in processing_objects)
+		S.drain()
+
 datum/controller/game_controller/proc/process_alarms()
 	last_thing_processed = /datum/subsystem/alarm
 	alarm_manager.fire()

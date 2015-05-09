@@ -1,7 +1,7 @@
 /mob/living/silicon/platform/spybug
 	name = "bug"
 	real_name = "spy bug"
-	icon = 'icons/mob/robots.dmi'
+	icon = 'icons/apollo/mob/robots.dmi'
 	icon_state = "spy-bug"
 	maxHealth = 1
 	health = 1

@@ -548,3 +548,4 @@
 	statistics.increase_stat("people_slipped")
 
 	return 1
+
